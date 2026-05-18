@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Mohan Inn | Best Luxury & Budget Hotel in City Center</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Hotel Mohan Inn | Best Luxury & Budget Hotel in City Center">
+    <meta name="description" content="Experience premium comfort at Hotel Mohan Inn. Offering luxury AC rooms, free WiFi, parking, and a top restaurant. The best affordable family hotel near the airport. Book now!">
+    <meta name="keywords" content="best hotel, budget hotel, luxury rooms, family hotel, hotel near airport, affordable hotel, AC rooms, free WiFi, parking facility, restaurant, banquet hall, hotel booking">
+    <meta name="author" content="Hotel Mohan Inn">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.hotelmohaninn.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.hotelmohaninn.com/">
+    <meta property="og:title" content="Hotel Mohan Inn | Premium & Affordable Hotel">
+    <meta property="og:description" content="Stay at the finest hotel offering luxury rooms, a top-tier restaurant, and excellent amenities. Perfect for families and business travelers.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1200">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.hotelmohaninn.com/">
+    <meta property="twitter:title" content="Hotel Mohan Inn | Premium & Affordable Hotel">
+    <meta property="twitter:description" content="Stay at the finest hotel offering luxury rooms, a top-tier restaurant, and excellent amenities. Perfect for families and business travelers.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1200">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: { 400: '#ecc94b', 500: '#d4af37', 600: '#b7952a' },
+                        dark: '#111827',
+                        navy: '#1e3a8a'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Styles for aesthetics and smooth animations */
+        html { scroll-padding-top: 5rem; }
+        .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .hero-overlay { background: linear-gradient(to right, rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.4)); }
+        
+        .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+        
+        .lightbox { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9); }
+        .lightbox-content { margin: auto; display: block; max-width: 90%; max-height: 90vh; margin-top: 5vh; border-radius: 8px; }
+        .close-lightbox { position: absolute; top: 15px; right: 35px; color: #f1f1f1; font-size: 40px; font-weight: bold; cursor: pointer; }
+        
+        /* Floating Buttons */
+        .float-btn { position: fixed; bottom: 20px; z-index: 50; width: 60px; height: 60px; border-radius: 50px; text-align: center; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; font-size: 30px; transition: all 0.3s ease; }
+        .wa-btn { right: 20px; background-color: #25d366; color: #FFF; }
+        .wa-btn:hover { background-color: #128C7E; transform: scale(1.1); }
+        .call-btn { left: 20px; background-color: #d4af37; color: #FFF; }
+        .call-btn:hover { background-color: #b7952a; transform: scale(1.1); }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "name": "Hotel Mohan Inn",
+      "description": "Experience premium comfort at Hotel Mohan Inn. Offering luxury AC rooms, free WiFi, parking, and a top restaurant.",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1200",
+      "url": "https://www.hotelmohaninn.com/",
+      "telephone": "+919876543210",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Heritage Road",
+        "addressLocality": "City Center",
+        "postalCode": "110001",
+        "addressCountry": "IN"
+      },
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": "True" },
+        { "@type": "LocationFeatureSpecification", "name": "Parking Facility", "value": "True" },
+        { "@type": "LocationFeatureSpecification", "name": "Restaurant", "value": "True" },
+        { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": "True" }
+      ],
+      "starRating": {
+        "@type": "Rating",
+        "ratingValue": "4"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Is Hotel Mohan Inn a family hotel?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, Hotel Mohan Inn is one of the best family hotels in the area, offering spacious family luxury rooms and kid-friendly meals in our restaurant." }
+      }, {
+        "@type": "Question",
+        "name": "Do you provide parking facilities?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, we provide secure, free parking facility for all our registered guests." }
+      }, {
+        "@type": "Question",
+        "name": "Is the hotel near the airport?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, we are conveniently located just 15 minutes away from the international airport, making us an ideal hotel near the airport." }
+      }]
+    }
+    </script>
+</head>
+<body class="font-sans text-gray-700 antialiased bg-gray-50 selection:bg-gold-500 selection:text-white">
+
+    <header class="fixed w-full top-0 z-50 glass-nav shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#home" class="font-serif text-2xl md:text-3xl font-bold text-dark flex items-center gap-2">
+                        <i class="fa-solid fa-crown text-gold-500"></i>
+                        Hotel Mohan Inn
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-6 lg:space-x-8 items-center">
+                    <a href="#home" class="text-gray-800 hover:text-gold-500 font-medium transition">Home</a>
+                    <a href="#about" class="text-gray-800 hover:text-gold-500 font-medium transition">About Us</a>
+                    <a href="#rooms" class="text-gray-800 hover:text-gold-500 font-medium transition">Rooms</a>
+                    <a href="#restaurant" class="text-gray-800 hover:text-gold-500 font-medium transition">Dining</a>
+                    <a href="#gallery" class="text-gray-800 hover:text-gold-500 font-medium transition">Gallery</a>
+                    <a href="#faq" class="text-gray-800 hover:text-gold-500 font-medium transition">FAQ</a>
+                    <a href="#contact" class="text-gray-800 hover:text-gold-500 font-medium transition">Contact</a>
+                    <a href="#booking" class="bg-gold-500 hover:bg-gold-600 text-white px-6 py-2 rounded-full font-semibold transition shadow-md">Book Now</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-800 focus:outline-none text-2xl">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t absolute w-full shadow-lg">
+            <div class="px-4 pt-2 pb-6 space-y-2 flex flex-col">
+                <a href="#home" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-gold-500 hover:bg-gray-50">Home</a>
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-gold-500 hover:bg-gray-50">About Us</a>
+                <a href="#rooms" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-gold-500 hover:bg-gray-50">Rooms</a>
+                <a href="#restaurant" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-gold-500 hover:bg-gray-50">Restaurant</a>
+                <a href="#gallery" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-gold-500 hover:bg-gray-50">Gallery</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-gold-500 hover:bg-gray-50">Contact Us</a>
+                <a href="#booking" class="block px-3 py-2 mt-4 text-center text-base font-semibold bg-gold-500 text-white rounded-md">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="relative h-screen flex items-center justify-center">
+            <!-- Background Image -->
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1542314831-c53cd4b85d0b?auto=format&fit=crop&q=80&w=1920" 
+                     alt="Hotel Mohan Inn Luxury Facade" 
+                     class="w-full h-full object-cover" />
+                <div class="absolute inset-0 hero-overlay"></div>
+            </div>
+
+            <!-- Content -->
+            <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
+                <span class="block text-gold-500 tracking-widest uppercase font-semibold text-sm mb-4">Welcome to Excellence</span>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-6 leading-tight">
+                    The Best Hotel Experience Awaits You
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-10 font-light">
+                    Discover the perfect blend of luxury and affordability. The premier family hotel near the airport with luxury AC rooms, free WiFi, and world-class dining.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#rooms" class="px-8 py-4 bg-transparent border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-dark transition">Explore Rooms</a>
+                    <a href="#booking" class="px-8 py-4 bg-gold-500 text-white rounded-full font-semibold hover:bg-gold-600 transition shadow-lg">Make a Reservation</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=800" alt="Luxurious Reception Area" class="rounded-lg shadow-2xl z-10 relative" loading="lazy">
+                        <div class="absolute -bottom-6 -right-6 w-2/3 h-full border-4 border-gold-500 rounded-lg z-0 hidden md:block"></div>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2 mb-4 text-gold-600 font-semibold uppercase tracking-wider text-sm">
+                            <i class="fa-solid fa-star"></i> About Us
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-serif font-bold text-dark mb-6">A Legacy of Comfort & Luxury</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Established with a vision to redefine hospitality, <strong>Hotel Mohan Inn</strong> is renowned as the best hotel in the city for travelers seeking both opulence and value. Whether you are searching for a <em>budget hotel</em> for a quick transit or a luxurious suite for a long stay, we cater to all your needs.
+                        </p>
+                        <p class="text-gray-600 mb-8 leading-relaxed">
+                            Strategically located as a premier <strong>hotel near the airport</strong>, we provide seamless connectivity. Our property features fully equipped <em>AC rooms</em>, an expansive banquet hall for events, and dedicated staff committed to making you feel at home.
+                        </p>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 text-xl"><i class="fa-solid fa-bed"></i></div>
+                                <span class="font-semibold text-dark">Luxury Rooms</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center text-green-600 text-xl"><i class="fa-solid fa-utensils"></i></div>
+                                <span class="font-semibold text-dark">Fine Dining</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-full bg-yellow-50 flex items-center justify-center text-yellow-600 text-xl"><i class="fa-solid fa-wifi"></i></div>
+                                <span class="font-semibold text-dark">Free WiFi</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-full bg-purple-50 flex items-center justify-center text-purple-600 text-xl"><i class="fa-solid fa-car"></i></div>
+                                <span class="font-semibold text-dark">Parking Facility</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rooms" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-gold-500 font-semibold tracking-wider uppercase text-sm">Accommodation</span>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-dark mt-2 mb-4">Our Featured Rooms</h2>
+                    <p class="text-gray-600">Experience unparalleled comfort in our beautifully designed accommodations. From affordable options to luxury suites, find your perfect stay.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Room 1 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg hover-lift">
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&q=80&w=800" alt="Deluxe AC Room" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" loading="lazy">
+                            <div class="absolute top-4 right-4 bg-white/90 px-3 py-1 rounded-full text-sm font-semibold text-dark shadow">Popular</div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-3">
+                                <h3 class="text-2xl font-serif font-bold text-dark">Deluxe AC Room</h3>
+                                <span class="text-xl font-bold text-gold-500">$89<span class="text-sm text-gray-500 font-normal">/night</span></span>
+                            </div>
+                            <p class="text-gray-600 mb-4 text-sm">Perfect affordable hotel option for couples or solo travelers featuring a plush queen-sized bed, high-speed free WiFi, and city views.</p>
+                            <div class="flex gap-4 mb-6 text-gray-500 text-sm border-b pb-4">
+                                <span><i class="fa-solid fa-users text-gold-500"></i> 2 Guests</span>
+                                <span><i class="fa-solid fa-maximize text-gold-500"></i> 250 sqft</span>
+                                <span><i class="fa-solid fa-snowflake text-gold-500"></i> AC</span>
+                            </div>
+                            <a href="#booking" class="block w-full text-center bg-dark text-white py-3 rounded-lg font-semibold hover:bg-gold-500 transition">Book This Room</a>
+                        </div>
+                    </div>
+
+                    <!-- Room 2 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg hover-lift">
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=800" alt="Executive Family Suite" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-3">
+                                <h3 class="text-2xl font-serif font-bold text-dark">Family Suite</h3>
+                                <span class="text-xl font-bold text-gold-500">$149<span class="text-sm text-gray-500 font-normal">/night</span></span>
+                            </div>
+                            <p class="text-gray-600 mb-4 text-sm">The ultimate family hotel experience. Spacious suite with two king beds, a living area, and premium amenities for a relaxing stay.</p>
+                            <div class="flex gap-4 mb-6 text-gray-500 text-sm border-b pb-4">
+                                <span><i class="fa-solid fa-users text-gold-500"></i> 4 Guests</span>
+                                <span><i class="fa-solid fa-maximize text-gold-500"></i> 450 sqft</span>
+                                <span><i class="fa-solid fa-mug-hot text-gold-500"></i> Mini-bar</span>
+                            </div>
+                            <a href="#booking" class="block w-full text-center bg-dark text-white py-3 rounded-lg font-semibold hover:bg-gold-500 transition">Book This Room</a>
+                        </div>
+                    </div>
+
+                    <!-- Room 3 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg hover-lift">
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&q=80&w=800" alt="Luxury Royal Suite" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" loading="lazy">
+                            <div class="absolute top-4 right-4 bg-gold-500 px-3 py-1 rounded-full text-sm font-semibold text-white shadow">Premium</div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-3">
+                                <h3 class="text-2xl font-serif font-bold text-dark">Royal Luxury Suite</h3>
+                                <span class="text-xl font-bold text-gold-500">$299<span class="text-sm text-gray-500 font-normal">/night</span></span>
+                            </div>
+                            <p class="text-gray-600 mb-4 text-sm">Experience unmatched elegance in our luxury rooms. Features a private jacuzzi, panoramic views, and exclusive access to the lounge.</p>
+                            <div class="flex gap-4 mb-6 text-gray-500 text-sm border-b pb-4">
+                                <span><i class="fa-solid fa-users text-gold-500"></i> 2 Guests</span>
+                                <span><i class="fa-solid fa-maximize text-gold-500"></i> 600 sqft</span>
+                                <span><i class="fa-solid fa-bath text-gold-500"></i> Jacuzzi</span>
+                            </div>
+                            <a href="#booking" class="block w-full text-center bg-dark text-white py-3 rounded-lg font-semibold hover:bg-gold-500 transition">Book This Room</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="restaurant" class="py-20 bg-dark text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 lg:order-1">
+                        <span class="text-gold-500 font-semibold tracking-wider uppercase text-sm">Culinary Excellence</span>
+                        <h2 class="text-3xl md:text-4xl font-serif font-bold mt-2 mb-6">Gourmet Restaurant & Elegant Banquet Hall</h2>
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            Indulge your senses at our signature <strong>hotel restaurant</strong>, where our master chefs prepare a symphony of local and international cuisines. Using only the freshest ingredients, we promise a dining experience that delights.
+                        </p>
+                        <p class="text-gray-300 mb-8 leading-relaxed">
+                            Planning a celebration or corporate event? Our state-of-the-art <strong>banquet hall</strong> is perfect for weddings, conferences, and parties, complete with professional catering and event management services.
+                        </p>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center gap-3 text-gray-200"><i class="fa-solid fa-check text-gold-500"></i> Multi-cuisine fine dining</li>
+                            <li class="flex items-center gap-3 text-gray-200"><i class="fa-solid fa-check text-gold-500"></i> 24/7 In-room dining service</li>
+                            <li class="flex items-center gap-3 text-gray-200"><i class="fa-solid fa-check text-gold-500"></i> 500+ capacity grand banquet hall</li>
+                        </ul>
+                        <a href="#contact" class="inline-block px-8 py-3 border-2 border-gold-500 text-gold-500 rounded-full font-semibold hover:bg-gold-500 hover:text-white transition">Inquire for Events</a>
+                    </div>
+                    <div class="order-1 lg:order-2 relative">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800" alt="Luxury Hotel Restaurant" class="rounded-xl shadow-2xl" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1519167758481-83f5240d453d?auto=format&fit=crop&q=80&w=400" alt="Gourmet Food Plate" class="absolute -bottom-10 -left-10 w-48 h-48 object-cover border-4 border-dark rounded-xl shadow-xl hidden md:block" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-dark mb-4">Discover Our Property</h2>
+                    <p class="text-gray-600">Take a visual tour of Hotel Mohan Inn's exquisite interiors, luxurious rooms, and exceptional amenities.</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <!-- Gallery Images -->
+                    <div class="aspect-square overflow-hidden rounded-lg cursor-pointer hover-lift" onclick="openLightbox(this.querySelector('img').src)">
+                        <img src="https://images.unsplash.com/photo-1551882547-ff40c0d509af?auto=format&fit=crop&q=80&w=600" alt="Hotel Lobby" class="w-full h-full object-cover transition duration-300 hover:scale-110" loading="lazy">
+                    </div>
+                    <div class="aspect-square overflow-hidden rounded-lg cursor-pointer hover-lift" onclick="openLightbox(this.querySelector('img').src)">
+                        <img src="https://images.unsplash.com/photo-1592229505726-ca121723b8ef?auto=format&fit=crop&q=80&w=600" alt="AC Room Interior" class="w-full h-full object-cover transition duration-300 hover:scale-110" loading="lazy">
+                    </div>
+                    <div class="aspect-square overflow-hidden rounded-lg cursor-pointer hover-lift" onclick="openLightbox(this.querySelector('img').src)">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=600" alt="Hotel Bathroom" class="w-full h-full object-cover transition duration-300 hover:scale-110" loading="lazy">
+                    </div>
+                    <div class="aspect-square overflow-hidden rounded-lg cursor-pointer hover-lift" onclick="openLightbox(this.querySelector('img').src)">
+                        <img src="https://images.unsplash.com/photo-1522798514-97ceb8c4f1c8?auto=format&fit=crop&q=80&w=600" alt="Swimming Pool Area" class="w-full h-full object-cover transition duration-300 hover:scale-110" loading="lazy">
+                    </div>
+                    <div class="aspect-square overflow-hidden rounded-lg cursor-pointer hover-lift" onclick="openLightbox(this.querySelector('img').src)">
+                        <img src="https://images.unsplash.com/photo-1414235077428-33898f82c610?auto=format&fit=crop&q=80&w=600" alt="Restaurant Dining" class="w-full h-full object-cover transition duration-300 hover:scale-110" loading="lazy">
+                    </div>
+                    <div class="aspect-square overflow-hidden rounded-lg cursor-pointer hover-lift" onclick="openLightbox(this.querySelector('img').src)">
+                        <img src="https://images.unsplash.com/photo-1561501900-3701fa6a0864?auto=format&fit=crop&q=80&w=600" alt="Spa and Wellness" class="w-full h-full object-cover transition duration-300 hover:scale-110" loading="lazy">
+                    </div>
+                    <div class="aspect-square overflow-hidden rounded-lg cursor-pointer hover-lift hidden md:block" onclick="openLightbox(this.querySelector('img').src)">
+                        <img src="https://images.unsplash.com/photo-1519167758481-83f5240d453d?auto=format&fit=crop&q=80&w=600" alt="Banquet Hall Setup" class="w-full h-full object-cover transition duration-300 hover:scale-110" loading="lazy">
+                    </div>
+                    <div class="aspect-square overflow-hidden rounded-lg cursor-pointer hover-lift hidden md:block" onclick="openLightbox(this.querySelector('img').src)">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=600" alt="Hotel Exterior Night" class="w-full h-full object-cover transition duration-300 hover:scale-110" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Lightbox Modal -->
+        <div id="imageLightbox" class="lightbox">
+            <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+            <img class="lightbox-content" id="lightboxImage">
+        </div>
+
+        <section id="attractions" class="py-20 bg-gray-50 border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                    <div class="max-w-2xl">
+                        <span class="text-gold-500 font-semibold tracking-wider uppercase text-sm">Explore The City</span>
+                        <h2 class="text-3xl md:text-4xl font-serif font-bold text-dark mt-2">Nearby Attractions</h2>
+                    </div>
+                    <p class="text-gray-600 mt-4 md:mt-0 max-w-sm text-right hidden md:block">
+                        Perfectly situated in the city center, giving you quick access to prime business districts and tourist spots.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 flex items-start gap-4 hover:shadow-md transition">
+                        <div class="bg-blue-100 p-3 rounded-full text-blue-600"><i class="fa-solid fa-plane-departure text-xl"></i></div>
+                        <div>
+                            <h4 class="font-bold text-dark text-lg">International Airport</h4>
+                            <p class="text-sm text-gray-500 mt-1">15 mins drive (12 km). Quick transit for flyers.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 flex items-start gap-4 hover:shadow-md transition">
+                        <div class="bg-green-100 p-3 rounded-full text-green-600"><i class="fa-solid fa-bag-shopping text-xl"></i></div>
+                        <div>
+                            <h4 class="font-bold text-dark text-lg">City Center Mall</h4>
+                            <p class="text-sm text-gray-500 mt-1">5 mins walk (0.5 km). Premium shopping and cinema.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 flex items-start gap-4 hover:shadow-md transition">
+                        <div class="bg-red-100 p-3 rounded-full text-red-600"><i class="fa-solid fa-monument text-xl"></i></div>
+                        <div>
+                            <h4 class="font-bold text-dark text-lg">Heritage Museum</h4>
+                            <p class="text-sm text-gray-500 mt-1">10 mins drive (5 km). Discover local history.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-dark mb-4">Latest News & Travel Tips</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Read our blog to discover travel tips, special offers, and reasons why we are the best hotel for your next stay.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Blog Card 1 -->
+                    <article class="bg-gray-50 rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=600" alt="Airport Travel Tips" class="w-full h-48 object-cover" loading="lazy">
+                        <div class="p-6">
+                            <div class="text-sm text-gold-500 font-semibold mb-2">Travel Guide</div>
+                            <h3 class="text-xl font-bold text-dark mb-3"><a href="#" class="hover:text-gold-500 transition">Why Booking a Hotel Near the Airport Saves You Time</a></h3>
+                            <p class="text-gray-600 text-sm mb-4 line-clamp-3">Discover the massive benefits of staying close to the airport for business and leisure trips, minimizing commute stress.</p>
+                            <a href="#" class="text-dark font-semibold text-sm flex items-center gap-2 hover:text-gold-500">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <!-- Blog Card 2 -->
+                    <article class="bg-gray-50 rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=600" alt="Wedding Banquet" class="w-full h-48 object-cover" loading="lazy">
+                        <div class="p-6">
+                            <div class="text-sm text-gold-500 font-semibold mb-2">Events</div>
+                            <h3 class="text-xl font-bold text-dark mb-3"><a href="#" class="hover:text-gold-500 transition">How to Plan the Perfect Wedding in Our Banquet Hall</a></h3>
+                            <p class="text-gray-600 text-sm mb-4 line-clamp-3">A comprehensive guide to utilizing our massive banquet space and catering team for your dream wedding reception.</p>
+                            <a href="#" class="text-dark font-semibold text-sm flex items-center gap-2 hover:text-gold-500">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <!-- Blog Card 3 -->
+                    <article class="bg-gray-50 rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=600" alt="Budget Hotel Tips" class="w-full h-48 object-cover" loading="lazy">
+                        <div class="p-6">
+                            <div class="text-sm text-gold-500 font-semibold mb-2">Tips</div>
+                            <h3 class="text-xl font-bold text-dark mb-3"><a href="#" class="hover:text-gold-500 transition">Finding a Luxury Budget Hotel Without Compromise</a></h3>
+                            <p class="text-gray-600 text-sm mb-4 line-clamp-3">Learn how to identify affordable hotels that still offer premium amenities like free WiFi, AC rooms, and top-tier service.</p>
+                            <a href="#" class="text-dark font-semibold text-sm flex items-center gap-2 hover:text-gold-500">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-20 bg-gray-50 border-t border-gray-200">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-dark mb-4">Frequently Asked Questions</h2>
+                    <p class="text-gray-600">Got questions? We've got answers. If you can't find what you're looking for, feel free to contact us.</p>
+                </div>
+                
+                <div class="space-y-4">
+                    <!-- FAQ Item -->
+                    <details class="group bg-white rounded-lg shadow-sm border border-gray-100 [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-gray-900">
+                            <h3 class="font-medium text-lg">What are the check-in and check-out times?</h3>
+                            <span class="relative size-5 shrink-0">
+                                <i class="fa-solid fa-plus absolute inset-0 opacity-100 transition duration-300 group-open:opacity-0"></i>
+                                <i class="fa-solid fa-minus absolute inset-0 opacity-0 transition duration-300 group-open:opacity-100"></i>
+                            </span>
+                        </summary>
+                        <div class="px-6 pb-6 text-gray-600">Standard check-in time is 2:00 PM, and check-out is at 11:00 AM. Early check-in and late check-out are subject to availability.</div>
+                    </details>
+                    
+                    <details class="group bg-white rounded-lg shadow-sm border border-gray-100 [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-gray-900">
+                            <h3 class="font-medium text-lg">Is Hotel Mohan Inn a family hotel?</h3>
+                            <span class="relative size-5 shrink-0">
+                                <i class="fa-solid fa-plus absolute inset-0 opacity-100 transition duration-300 group-open:opacity-0"></i>
+                                <i class="fa-solid fa-minus absolute inset-0 opacity-0 transition duration-300 group-open:opacity-100"></i>
+                            </span>
+                        </summary>
+                        <div class="px-6 pb-6 text-gray-600">Yes, Hotel Mohan Inn is highly rated as a family hotel. We offer spacious family suites, kid-friendly menus in our restaurant, and a safe environment for all ages.</div>
+                    </details>
+
+                    <details class="group bg-white rounded-lg shadow-sm border border-gray-100 [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-gray-900">
+                            <h3 class="font-medium text-lg">Do you offer a parking facility?</h3>
+                            <span class="relative size-5 shrink-0">
+                                <i class="fa-solid fa-plus absolute inset-0 opacity-100 transition duration-300 group-open:opacity-0"></i>
+                                <i class="fa-solid fa-minus absolute inset-0 opacity-0 transition duration-300 group-open:opacity-100"></i>
+                            </span>
+                        </summary>
+                        <div class="px-6 pb-6 text-gray-600">Absolutely. We provide a secure, complimentary parking facility for all guests staying with us, with 24/7 security.</div>
+                    </details>
+                    
+                    <details class="group bg-white rounded-lg shadow-sm border border-gray-100 [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-gray-900">
+                            <h3 class="font-medium text-lg">Are all rooms AC rooms with free WiFi?</h3>
+                            <span class="relative size-5 shrink-0">
+                                <i class="fa-solid fa-plus absolute inset-0 opacity-100 transition duration-300 group-open:opacity-0"></i>
+                                <i class="fa-solid fa-minus absolute inset-0 opacity-0 transition duration-300 group-open:opacity-100"></i>
+                            </span>
+                        </summary>
+                        <div class="px-6 pb-6 text-gray-600">Yes, every room in our hotel is fully air-conditioned (AC rooms) and comes equipped with high-speed, unlimited free WiFi access.</div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    
+                    <!-- Booking Form -->
+                    <div class="bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100">
+                        <h2 class="text-3xl font-serif font-bold text-dark mb-2">Book Your Stay</h2>
+                        <p class="text-gray-600 mb-8">Secure your luxury room today at the best affordable hotel rates.</p>
+                        
+                        <form id="hotel-booking-form" onsubmit="event.preventDefault(); showSuccessMessage();" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Check-In Date</label>
+                                    <input type="date" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gold-500 focus:border-gold-500 outline-none transition">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Check-Out Date</label>
+                                    <input type="date" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gold-500 focus:border-gold-500 outline-none transition">
+                                </div>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Guests</label>
+                                    <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gold-500 focus:border-gold-500 outline-none transition">
+                                        <option>1 Adult</option>
+                                        <option selected>2 Adults</option>
+                                        <option>2 Adults, 1 Child</option>
+                                        <option>2 Adults, 2 Children</option>
+                                        <option>Group Booking</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Room Type</label>
+                                    <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gold-500 focus:border-gold-500 outline-none transition">
+                                        <option>Deluxe AC Room</option>
+                                        <option>Family Suite</option>
+                                        <option>Royal Luxury Suite</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                                <input type="text" placeholder="John Doe" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gold-500 focus:border-gold-500 outline-none transition">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email / Phone</label>
+                                <input type="text" placeholder="john@example.com or +1 234 567 890" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gold-500 focus:border-gold-500 outline-none transition">
+                            </div>
+
+                            <button type="submit" class="w-full bg-gold-500 hover:bg-gold-600 text-white font-bold text-lg py-4 rounded-lg shadow-lg transition-transform hover:-translate-y-1">
+                                Confirm Hotel Booking
+                            </button>
+                            <p id="form-success-msg" class="hidden text-green-600 text-center font-medium mt-4">Thank you! Your booking request has been received. We will contact you shortly.</p>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info & Map (Section id="contact") -->
+                    <div id="contact" class="flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-3xl font-serif font-bold text-dark mb-6">Contact Us</h2>
+                            <p class="text-gray-600 mb-8">Whether you have a question about our amenities, restaurant, or need help with a reservation, our team is here 24/7.</p>
+                            
+                            <div class="space-y-6 mb-8">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gold-600 shrink-0">
+                                        <i class="fa-solid fa-location-dot text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-dark text-lg">Hotel Location</h4>
+                                        <p class="text-gray-600">123 Heritage Road, City Center, 110001, IN</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gold-600 shrink-0">
+                                        <i class="fa-solid fa-phone text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-dark text-lg">Call Us (24/7)</h4>
+                                        <p class="text-gray-600"><a href="tel:+919876543210" class="hover:text-gold-500">+91 98765 43210</a></p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gold-600 shrink-0">
+                                        <i class="fa-solid fa-envelope text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-dark text-lg">Email Us</h4>
+                                        <p class="text-gray-600"><a href="mailto:info@hotelmohaninn.com" class="hover:text-gold-500">info@hotelmohaninn.com</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Google Maps Embed -->
+                        <div class="w-full h-64 rounded-xl overflow-hidden shadow-md">
+                            <!-- Placeholder Map for demo using iframe. In production, insert real Google Maps embed link -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14008.114827184423!2d77.20902120000001!3d28.62890165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b741d057%3A0xc46188cb612f22b9!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-gray-300 pt-16 pb-8 border-t-4 border-gold-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                
+                <!-- Brand -->
+                <div>
+                    <a href="#home" class="font-serif text-2xl font-bold text-white flex items-center gap-2 mb-6">
+                        <i class="fa-solid fa-crown text-gold-500"></i> Hotel Mohan Inn
+                    </a>
+                    <p class="text-sm text-gray-400 mb-6">The best affordable premium hotel destination offering luxury rooms, free WiFi, and exquisite dining. Your comfort is our priority.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold-500 hover:text-white transition"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold-500 hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold-500 hover:text-white transition"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="hover:text-gold-500 transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-gold-500 transition">About Us</a></li>
+                        <li><a href="#rooms" class="hover:text-gold-500 transition">Our Rooms</a></li>
+                        <li><a href="#gallery" class="hover:text-gold-500 transition">Image Gallery</a></li>
+                        <li><a href="#blog" class="hover:text-gold-500 transition">Blog & Tips</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Hotel Services</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><i class="fa-solid fa-chevron-right text-gold-500 text-xs mr-2"></i> AC Rooms</li>
+                        <li><i class="fa-solid fa-chevron-right text-gold-500 text-xs mr-2"></i> Free High-Speed WiFi</li>
+                        <li><i class="fa-solid fa-chevron-right text-gold-500 text-xs mr-2"></i> Secure Parking Facility</li>
+                        <li><i class="fa-solid fa-chevron-right text-gold-500 text-xs mr-2"></i> Gourmet Restaurant</li>
+                        <li><i class="fa-solid fa-chevron-right text-gold-500 text-xs mr-2"></i> Grand Banquet Hall</li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Newsletter</h4>
+                    <p class="text-sm text-gray-400 mb-4">Subscribe for exclusive offers and best hotel deals directly to your inbox.</p>
+                    <form onsubmit="event.preventDefault(); this.innerHTML='<p class=\'text-gold-500 text-sm\'>Subscribed successfully!</p>';" class="flex">
+                        <input type="email" placeholder="Your email address" required class="bg-gray-800 text-white px-4 py-2 rounded-l-md w-full outline-none focus:ring-1 focus:ring-gold-500">
+                        <button type="submit" class="bg-gold-500 text-white px-4 py-2 rounded-r-md hover:bg-gold-600 transition"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- SEO Breadcrumbs / Internal links at footer -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2026 Hotel Mohan Inn. All rights reserved.</p>
+                <div class="mt-4 md:mt-0 flex space-x-4">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                    <a href="#sitemap" class="hover:text-white transition">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <a href="https://wa.me/919876543210" target="_blank" class="float-btn wa-btn" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:+919876543210" class="float-btn call-btn" aria-label="Call Now">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Sticky Navbar Effect on Scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add('shadow-md');
+                navbar.classList.remove('shadow-sm');
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                navbar.classList.remove('shadow-md');
+                navbar.classList.add('shadow-sm');
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+
+        // Lightbox Functionality
+        function openLightbox(imageSrc) {
+            document.getElementById('lightboxImage').src = imageSrc;
+            document.getElementById('imageLightbox').style.display = 'block';
+            document.body.style.overflow = 'hidden'; // prevent background scrolling
+        }
+
+        function closeLightbox() {
+            document.getElementById('imageLightbox').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close lightbox on outside click
+        window.onclick = function(event) {
+            const modal = document.getElementById('imageLightbox');
+            if (event.target == modal) {
+                closeLightbox();
+            }
+        }
+        
+        // Escape key to close lightbox
+        document.addEventListener('keydown', function(event){
+            if(event.key === "Escape"){
+                closeLightbox();
+            }
+        });
+
+        // Form Success Simulator
+        function showSuccessMessage() {
+            const btn = document.querySelector('#hotel-booking-form button');
+            const msg = document.getElementById('form-success-msg');
+            btn.innerHTML = '<i class="fa-solid fa-check"></i> Processing...';
+            btn.classList.add('opacity-75');
+            
+            setTimeout(() => {
+                btn.innerHTML = 'Confirm Hotel Booking';
+                btn.classList.remove('opacity-75');
+                msg.classList.remove('hidden');
+                document.getElementById('hotel-booking-form').reset();
+                
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    msg.classList.add('hidden');
+                }, 5000);
+            }, 1500);
+        }
+    </script>
+</body>
+</html>
